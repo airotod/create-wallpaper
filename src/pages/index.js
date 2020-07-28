@@ -24,7 +24,7 @@ const COLORS = {
   WHITE: "#ffffff",
   BLACK: "#000000",
   BLUE: "#2B547E",
-  YELLO: "#FBB117",
+  YELLOW: "#FBB117",
   PINK: "#C25A7C",
 }
 const Cnvs = styled.canvas`
@@ -191,9 +191,9 @@ export default function Home({ data }) {
             }}
           ></ColorBtn>
           <ColorBtn
-            btnColor={COLORS.YELLO}
+            btnColor={COLORS.YELLOW}
             onClick={() => {
-              setBackColor(COLORS.YELLO)
+              setBackColor(COLORS.YELLOW)
               setFontColor(COLORS.WHITE)
               setAuthorColor("#d0c3f1")
             }}
