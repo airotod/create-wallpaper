@@ -12,8 +12,8 @@ const Container = styled.div`
 const ColorBtn = styled.button`
   font-family: inherit;
   margin: 4px 5px;
-  width: 41px;
-  height: 41px;
+  width: 34px;
+  height: 34px;
   border-radius: 41px;
   outline: none;
   border: solid 1px #5a5a5a;
@@ -39,7 +39,6 @@ const Cnvs = styled.canvas`
 export default function Home({ data }) {
   const { register, handleSubmit } = useForm()
   const onSubmit = data => {
-    console.log(data)
     setMyText(data["myText"])
     setMyAuthor(data["myAuthor"])
   }
@@ -59,13 +58,11 @@ export default function Home({ data }) {
   const [fontSize, setFontSize] = useState("44px")
   const [fontMaxWidth, setFontMaxWidth] = useState("1350px")
   const [fontStyle, setFontStyle] = useState("Merriweather")
-  const [btnColor, setBtnColor] = useState("#000000")
 
   React.useEffect(() => {
     const cnvs = canvasRef.current
     const ctx = cnvs.getContext("2d")
     draw(cnvs, ctx, myText, lineHeight, fontStyle)
-    console.log("called")
   })
 
   function draw(cnvs, ctx, text, lineHeight, fontStyle) {
@@ -220,9 +217,7 @@ export default function Home({ data }) {
               b.style.opacity = 0.3
             }}
           >
-            <div>
               Download <span className={styles.dwnld_size}>(Mobile)</span>
-            </div>
           </a>
           <button
             id="dwnld_btn"
@@ -244,9 +239,7 @@ export default function Home({ data }) {
               b.style.opacity = 0.3
             }}
           >
-            <div>
               Download <span className={styles.dwnld_size}>(Desktop)</span>
-            </div>
           </button>
         </div>
       </div>
