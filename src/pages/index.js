@@ -26,6 +26,7 @@ const COLORS = {
   BLUE: "#2B547E",
   YELLOW: "#FBB117",
   PINK: "#C25A7C",
+  GREEN: "#134a2f",
 }
 const Cnvs = styled.canvas`
   width: 500px;
@@ -193,6 +194,14 @@ export default function Home({ data }) {
               setBackColor(COLORS.YELLOW)
               setFontColor(COLORS.WHITE)
               setAuthorColor("#d0c3f1")
+            }}
+          ></ColorBtn>
+          <ColorBtn
+            btnColor={COLORS.GREEN}
+            onClick={() => {
+              setBackColor(COLORS.GREEN)
+              setFontColor(COLORS.WHITE)
+              setAuthorColor("#94e7bf")
             }}
           ></ColorBtn>
         </div>
