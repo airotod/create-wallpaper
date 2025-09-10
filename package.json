@@ -15,7 +15,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
   },
   "dependencies": {
-    "gatsby": "^2.21.22",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "react-dom": "^16.13.1",
     "react-hook-form": "^6.0.2",
